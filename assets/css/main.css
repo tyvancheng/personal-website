@@ -186,7 +186,9 @@ html {
 }
 
 body {
-	background: #312450;
+	/* background: #312450; */
+	background: #243150;
+	background: #333e4b;
 }
 
 body.is-preload *,
@@ -3369,31 +3371,40 @@ table.alt tfoot {
 }
 
 .wrapper.alt {
-	background-color: #261c3e;
+	background-color: #261c3e; 
+	background-color: #08b35e;
 }
 
-.wrapper.style1 {
-	background-color: #5e42a6;
+.wrapper.style1 { /* welcome and contact background color */
+	/* background-color: #5e42a6; */
+	/* background-color: #64a3a7; */
+	background-color: #7b8f84;
 }
 
 .wrapper.style1-alt {
-	background-color: #493382;
+	/* background-color: #493382; */
+	background-color: #58748d; /* This is the copy right section */
 }
 
 .wrapper.style2 {
-	background-color: #5052b5;
+	/* background-color: #5052b5; */
+	background-color: #58748d; /* This is the main body para section */
+
 }
 
 .wrapper.style2-alt {
-	background-color: #3e4094;
+	/* background-color: #3e4094; */
+	background-color: #587995;
 }
 
 .wrapper.style3 {
-	background-color: #b74e91;
+	/* background-color: #b74e91; */
+	background-color: #989898;
 }
 
 .wrapper.style3-alt {
-	background-color: #953d75;
+	/* background-color: #953d75; */
+	background-color: #999999;
 }
 
 .wrapper.fullscreen {
@@ -3657,7 +3668,8 @@ body.is-preload .wrapper.fade>.inner {
 
 #sidebar {
 	padding: 2.5em 2.5em 0.5em 2.5em;
-	background: #312450;
+	/* background: #312450; */
+	background: #3b4757;
 	cursor: default;
 	height: 100vh;
 	left: 0;
@@ -3895,14 +3907,18 @@ body.is-ie #sidebar>.inner {
 }
 
 #sidebar nav a:before {
-	background: #3c2c62;
+	background: #283f65;
 }
 
 #sidebar nav a:after {
-	background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
-	background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
-	background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
-	background-image: linear-gradient(to right, #5e42a6, #b74e91);
+	background-image: -moz-linear-gradient(to right, #7b8f84, #a8a7a7);
+	/* background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91); */
+	background-image: -webkit-linear-gradient(to right, #7b8f84, #a8a7a7);
+	/* background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91); */
+	background-image: -ms-linear-gradient(to right, #7b8f84, #a8a7a7);
+	/* background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91); */
+	background-image: linear-gradient(to right, #7b8f84, #a8a7a7);
+	/* background-image: linear-gradient(to right, #5e42a6, #b74e91); */
 	-moz-transition: max-width 0.2s ease;
 	-webkit-transition: max-width 0.2s ease;
 	-ms-transition: max-width 0.2s ease;
@@ -3991,7 +4007,7 @@ body.is-preload #sidebar nav ul li {
 
 	#sidebar nav a:after {
 		background-image: none;
-		background-color: #b74e91;
+		background-color: #d7d7d7;
 	}
 
 }
@@ -4008,7 +4024,8 @@ body.is-preload #sidebar nav ul li {
 
 #intro {
 	background-attachment: fixed;
-	background-image: url("images/intro.svg");
+	background-image: url("images/intro3.svg");
+	/* background-image: url("images/goldenSpiral.png"); */
 	background-position: top right;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
