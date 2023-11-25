@@ -145,7 +145,7 @@
 						</p>
 					</section>
 					<section>
-						<a href="https://tyvancheng.github.io/Visor/" target="_blank">
+						<a href="https://tyvancheng.github.io/Visor/" target="_blank"> 
 							<!-- <a target="_blank"> -->
 							<img src="images/visor.jpeg"></img>
 						</a>
@@ -155,13 +155,11 @@
 					</section>
 					<section>
 						<div class="in-feature-header-flexbox">
-							<!-- <a href="https://lockedin-0ii7.onrender.com" target="_blank"> -->
-							<a target="_blank">
+							<a href="https://tyvancheng.github.io/Visor/" target="_blank">
 								<h3>Visor</h3>
 							</a>
 						</div>
-						<p>Visor is a vanilla JS application that provides a graphical representation, through a
-							user-friendly interface, of over 8000 stocks' performances over various time frames.
+						<p>Visor is a vanilla JS application that provides a graphical representation of over 8000 stocks' performances over various time frames.
 							Additionally, it leverages the AlphaVantage API and TickerSymbol API to provide real-time
 							and accurate data on various stocks.
 							I'm currently developing a beta coefficient calculator and stock-specific news feed feature
@@ -389,14 +387,14 @@
 							<div class="fields">
 								<div class="field half">
 									<label for="name">
-										Name 
-										<span style="color: black; font-weight: 300;">(required)</span> 
-									</label> 
-									<input name="name" type="text" id="name" placeholder="Full Name" required=""/>
+										Name
+										<span style="color: black; font-weight: 300;">(required)</span>
+									</label>
+									<input name="name" type="text" id="name" placeholder="Full Name" required="" />
 								</div>
 								<div class="field half">
 									<label>
-										Email 
+										Email
 										<span style="color: black; font-weight: 300;">(required)</span>
 									</label>
 									<input type="email" name="email" placeholder="email@domain.com" required="">
@@ -408,8 +406,7 @@
 									</label>
 									<textarea name="message" rows="5"></textarea>
 								</div>
-								<input type="hidden" name="_subject" id="email-subject"
-										value="Contact Form Submission">
+								<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
 							</div>
 							<ul class="actions">
 								<li><button href="" class="button submit" type="submit">Send
@@ -514,12 +511,12 @@
 		function validateForm() {
 			const nameInputField = document.getElementById('name');
 			const emailInputField = document.getElementById('email');
-	
+
 			if (!nameInputField.value || !emailInputField.value) {
 				// alert('Please fill in the required fields (Name and Email)');
 				return false; // Prevent form submission
 			}
-	
+
 			return true; // Allow form submission
 		}
 	</script>
