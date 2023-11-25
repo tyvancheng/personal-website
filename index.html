@@ -146,7 +146,7 @@
 					</section>
 					<section>
 						<a href="https://tyvancheng.github.io/Visor/" target="_blank">
-						<!-- <a target="_blank"> -->
+							<!-- <a target="_blank"> -->
 							<img src="images/visor.jpeg"></img>
 						</a>
 						<!-- <span class="icon solid major fa-code"></span>
@@ -160,9 +160,12 @@
 								<h3>Visor</h3>
 							</a>
 						</div>
-						<p>Visor is a vanilla JS application that provides a graphical representation, through a user-friendly interface, of over 8000 stocks' performances over various time frames.
-							Additionally, it leverages the AlphaVantage API and TickerSymbol API to provide real-time and accurate data on various stocks.
-							I'm currently developing a beta coefficient calculator and stock-specific news feed feature for a more data driven user interface.
+						<p>Visor is a vanilla JS application that provides a graphical representation, through a
+							user-friendly interface, of over 8000 stocks' performances over various time frames.
+							Additionally, it leverages the AlphaVantage API and TickerSymbol API to provide real-time
+							and accurate data on various stocks.
+							I'm currently developing a beta coefficient calculator and stock-specific news feed feature
+							for a more data driven user interface.
 
 
 						</p>
@@ -356,25 +359,60 @@
 				<div class="split style1">
 					<section>
 
-						<form method="post" action="https://formspree.io/f/xvojgalk" id="contactForm" name="contactForm">
+						<!-- <form method="post" action="https://formspree.io/f/xvojgalk" id="contactForm" name="contactForm"> -->
+						<!-- <form method="post" action="https://formspree.io/f/xvojgalk" id="contactForm"
+							name="contactForm">
 							<div class="fields">
 								<div class="field half">
 									<label for="name">Name</label>
-									<input name="name" type="text" id="name" placeholder="Full Name" required=""/>
+									<input name="name" type="text" id="name" placeholder="Full Name" required="" />
 								</div>
 								<div class="field half">
 									<label for="email">Email</label>
-									<input name="email" type="text" id="email" placeholder="Email@address.com" required=""/>
+									<input name="email" type="text" id="email" placeholder="Email@address.com"
+										required="" />
 								</div>
 								<div class="field">
 									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="5" placeholder="I wou" required=""></textarea>
+									<textarea name="message" id="message" rows="5" placeholder="I wou"
+										required=""></textarea>
+								</div>
+								<input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+							</div>
+							<ul class="actions">
+								<li><button href="" class="button submit" type="submit" onclick="clearForm()">Send
+										Message</button></li>
+							</ul>
+						</form> -->
+
+						<form action="https://formspree.io/f/xvojgalk" method="POST" onsubmit="return validateForm()">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">
+										Name 
+										<span style="color: black; font-weight: 300;">(required)</span> 
+									</label> 
+									<input name="name" type="text" id="name" placeholder="Full Name" required=""/>
+								</div>
+								<div class="field half">
+									<label>
+										Email 
+										<span style="color: black; font-weight: 300;">(required)</span>
+									</label>
+									<input type="email" name="email" placeholder="email@domain.com" required="">
+								</div>
+								<div class="field">
+
+									<label>
+										Message
+									</label>
+									<textarea name="message" rows="5"></textarea>
 								</div>
 								<input type="hidden" name="_subject" id="email-subject"
 										value="Contact Form Submission">
 							</div>
 							<ul class="actions">
-								<li><button href="" class="button submit" type="submit" onclick="clearForm()">Send
+								<li><button href="" class="button submit" type="submit">Send
 										Message</button></li>
 							</ul>
 						</form>
@@ -461,10 +499,28 @@
 		});
 	</script>
 	<script> // Clear the form after submission
-		function clearForm() {
-			const form = document.getElementById('contactForm');
+		// function clearForm() {
+		// 	const form = document.getElementById('contactForm');
 
-			form.reset();
+		// 	form.reset();
+		// }
+		window.onbeforeunload = () => {
+			for (const form of document.getElementsByTagName('form')) {
+				form.reset();
+			}
+		}
+	</script>
+	<script>
+		function validateForm() {
+			const nameInputField = document.getElementById('name');
+			const emailInputField = document.getElementById('email');
+	
+			if (!nameInputField.value || !emailInputField.value) {
+				// alert('Please fill in the required fields (Name and Email)');
+				return false; // Prevent form submission
+			}
+	
+			return true; // Allow form submission
 		}
 	</script>
 	<script src="assets/js/jquery.min.js"></script>
